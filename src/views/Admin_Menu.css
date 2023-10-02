@@ -1,0 +1,43 @@
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Estilos para los botones */
+  .button-container button {
+    margin: 8px;
+    width: 150px; /* Ancho fijo para botones cuadrados */
+    height: 150px; /* Alto fijo para botones cuadrados */
+    border: none;
+    border-radius: 10px; /* Borde redondeado */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.2s ease; /* Transición suave al pasar el mouse */
+  }
+  
+  /* Estilos para colores de botones */
+  .button-container button:nth-child(1) {
+    background-color: #FF5733;
+  }
+  
+  .button-container button:nth-child(2) {
+    background-color: #33FF57;
+  }
+  
+  /* Agrega más reglas para otros colores si es necesario */
+  
+  /* Efecto de escala al pasar el mouse */
+  .button-container button:hover {
+    transform: scale(1.1); /* Escalar el botón al 110% del tamaño original */
+  }
+   
