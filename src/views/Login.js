@@ -24,11 +24,11 @@ export const Login = () => {
     <div class = "container" id = "container">
     <div class = "form-container sing-up-container">
         <form>
-            <h1>Crear Cuenta</h1>
-            <span>o usa tu correo para registrarte</span>
+            <h1>Inicia Sesión</h1>
+            <span>o crea una cuenta para acceder</span>
             <input type="email" placeholder="Email"/>
             <input type="password" placeholder="Contraseña"/>
-            <button onClick={handleButtonClick}>Registrarme</button>
+            <button onClick={handleButtonClick}>Acceder</button>
 
         </form>
 

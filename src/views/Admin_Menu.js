@@ -1,5 +1,6 @@
 import React from 'react';
 import './Admin_Menu.css';
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
@@ -10,6 +11,9 @@ import { faBriefcase, faGlobe, faLayerGroup, faEarthAmericas, faFaceSmile, faFil
 library.add(faBriefcase, faGlobe, faLayerGroup, faEarthAmericas, faFaceSmile, faFileInvoice, faCalendarDays, faAddressBook, faNewspaper, faTruckFast, faCartShopping, faUsers, faCog);
 
 export const Admin_Menu = () => {
+
+const navigate = useNavigate();
+
   let botones = [
     { icono: "briefcase", nombre: "Ventas" },
     { icono: "globe", nombre: "Sitio Web" },
@@ -41,6 +45,11 @@ export const Admin_Menu = () => {
     "#ffcc33"
   ];
 
+  // Función para manejar el clic en el botón
+  const handleClick = (nombre) => {
+    navigate(`/${nombre}`);
+  };
+
   return (
     <>
       <div className="container">
@@ -52,7 +61,11 @@ export const Admin_Menu = () => {
               };
               return (
                 <div className="col-md-3 d-flex justify-content-center align-items-center" key={index}>
-                  <button className="square-button" style={estiloBoton}>
+                  <button
+                    className="square-button"
+                    style={estiloBoton}
+                    onClick={() => handleClick(boton.nombre)}
+                  >
                     <FontAwesomeIcon icon={boton.icono} />
                     <span className="button-name">{boton.nombre}</span>
                   </button>
