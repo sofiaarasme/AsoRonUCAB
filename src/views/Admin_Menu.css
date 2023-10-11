@@ -1,75 +1,61 @@
- .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  /* Estilos para los botones */
-  .button-container button {
-    margin: 8px;
-    width: 150px; /* Ancho fijo para botones cuadrados */
-    height: 150px; /* Alto fijo para botones cuadrados */
-    border: none;
-    border-radius: 10px; /* Borde redondeado */
-    cursor: pointer;
-    font-size: 50px;
-    font-weight: bold;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra */
-    transition: transform 0.2s ease; /* Transición suave al pasar el mouse */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
 
-    &:hover {
-        transform: scale(1.1); 
-        font-size: 36px; 
-        color: white; 
-      }
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .button-name {
-        display: none;
-      }
+/* Estilos para los botones */
+.button-container button {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 
-    
-    &:hover {
-        transform: scale(1.1); 
-        font-size: 36px; 
-    }
-    
-   
-    &:hover .button-name {
-        display: inline; 
-        color: white; 
-        font-size: 24px;
-    }
-      
+  &:hover {
+    transform: scale(1.0);
+    font-size: 45px;
+    color: white;
   }
+}
 
-  .button-container button:hover .button-name {
-    display: inline; /* Cambia a "inline" para mostrar el nombre */
-  }
-  
-  /* Estilos para colores de botones */
-  .button-container button:nth-child(1) {
-    background-color: #FF5733;
-  }
-  
-  .button-container button:nth-child(2) {
-    background-color: #33FF57;
-  }
-  
-  /* Agrega más reglas para otros colores si es necesario */
-  
-  /* Efecto de escala al pasar el mouse */
-  .button-container button:hover {
-    transform: scale(1.1); /* Escalar el botón al 110% del tamaño original */
-  }
-   
+.button-name {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #615f5f;
+  font-size: 18px;
+}
+
+.button-container button:nth-child(1) {
+  background-color: #FF5733;
+}
+
+.button-container button:nth-child(2) {
+  background-color: #33FF57;
+}
+
+/* Efecto de escala al pasar el mouse */
+.button-container button:hover {
+  transform: scale(1.1);
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Login.css'
+import styles from './Login.css'
 import { useNavigate } from 'react-router-dom'; 
 
 export const Login = () => {
@@ -10,17 +10,12 @@ export const Login = () => {
 
   const handleButtonClick = () => {
 
-    alert('¡Se hizo clic en el botón Registrarme!');
     setClicked(true);
     navigate('/Admin_Menu');
   };
 
   return (
     <>
-    {/* <div>Login</div>
-    <div style={{ margin: 'auto', backgroundColor: 'red' }}>iujnj
-        <div style={{ margin: 'auto', backgroundColor: 'blue' }}>uymghumbg</div>
-    </div> */}
     <div class = "container" id = "container">
     <div class = "form-container sing-up-container">
         <form>

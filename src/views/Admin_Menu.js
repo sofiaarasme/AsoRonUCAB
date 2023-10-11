@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-// Importa los iconos de FontAwesome que necesitas
+// Importa los iconos de FontAwesome
 import { faBriefcase, faGlobe, faLayerGroup, faEarthAmericas, faFaceSmile, faFileInvoice, faCalendarDays, faAddressBook, faNewspaper, faTruckFast, faCartShopping, faUsers, faCog } from '@fortawesome/free-solid-svg-icons';
 
 // Agrega los iconos al library de FontAwesome
